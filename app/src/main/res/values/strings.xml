@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Roll it Billionaire !!</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="welcome">Welcome</string>
+    <string name="exit">Exit</string>
+    <string name="play">Play</string>
+    <string name="name">Name</string>
+    <string name="amount">Amount</string>
+    <string name="start">Start</string>
+    <string name="bet_1">Bet 1</string>
+    <string name="bet_amt">Bet Amt</string>
+    <string name="bet_2">Bet 2</string>
+    <string name="roll_it">Roll It</string>
+    <string name="game_over">Game Over !!</string>
+    <string name="play_again">Play again</string>
+</resources>

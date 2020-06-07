@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/gameTitle">
+
+    <fragment
+        android:id="@+id/gameTitle"
+        android:name="com.ghost.rollitbillionaire.GameTitle"
+        android:label="GameTitle"
+        tools:layout="@layout/fragment_game_title">
+        <action
+            android:id="@+id/action_gameTitle_to_gameEntry"
+            app:destination="@id/gameFrag" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFrag"
+        android:name="com.ghost.rollitbillionaire.GameFrag"
+        android:label="GameFrag"
+        tools:layout="@layout/fragment_game" >
+        <action
+            android:id="@+id/action_gameFrag_to_endGame"
+            app:destination="@id/endGame" />
+    </fragment>
+    <fragment
+        android:id="@+id/endGame"
+        android:name="com.ghost.rollitbillionaire.EndGame"
+        android:label="EndGame"
+        tools:layout="@layout/fragment_end_game" >
+        <action
+            android:id="@+id/action_endGame_to_gameTitle"
+            app:destination="@id/gameTitle" />
+    </fragment>
+</navigation>
